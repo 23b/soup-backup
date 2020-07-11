@@ -15,7 +15,7 @@ directory. This script requires wget and xsltproc.
 https://github.com/neingeist/soup-backup
 
 
-####Mac compatible
+##23b fork
 This fork replaces wget with curl to make it mac compatible.
 
 To make the file executable run
