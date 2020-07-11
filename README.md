@@ -1,3 +1,19 @@
+## 23b fork
+This fork replaces wget with curl to make it mac compatible.
+
+To make the file executable run
+
+```sh
+$ chmod 700 ./soup-backup
+```
+
+then follow the instructions from neingeist
+
+https://github.com/23b/soup-backup
+
+
+## neingeist soup-backup
+
 This script saves your soup including enclosures and might kill your cat
 (laughing or not.) A little .sh by neingeist (http://nein.gei.st.)
 
@@ -15,15 +31,3 @@ directory. This script requires wget and xsltproc.
 https://github.com/neingeist/soup-backup
 
 
-##23b fork
-This fork replaces wget with curl to make it mac compatible.
-
-To make the file executable run
-
-```sh
-$ chmod 700 ./soup-backup
-```
-
-then follow the instructions from neingeist (above)
-
-https://github.com/23b/soup-backup
