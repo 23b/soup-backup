@@ -1,7 +1,3 @@
-Newer Note: The script is still working. If it isn't it might just be that soup had another outage again.
-<s>NOTICE: Won't work since ... hmm,  2012 as the soup export RSS isn't
-working anymore.</s>
-
 This script saves your soup including enclosures and might kill your cat
 (laughing or not.) A little .sh by neingeist (http://nein.gei.st.)
 
@@ -17,3 +13,13 @@ The export RSS file and the enclosures will be saved in your current working
 directory. This script requires wget and xsltproc.
 
 https://github.com/neingeist/soup-backup
+
+
+:This fork:
+This fork replaces wget with curl to make it mac compatible.
+
+To make the file executable run
+
+chmod 700 ./soup-backup
+
+then follow the instructions from neingeist
