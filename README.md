@@ -15,11 +15,15 @@ directory. This script requires wget and xsltproc.
 https://github.com/neingeist/soup-backup
 
 
-:This fork:
+####Mac compatible
 This fork replaces wget with curl to make it mac compatible.
 
 To make the file executable run
 
-chmod 700 ./soup-backup
+```sh
+$ chmod 700 ./soup-backup
+```
 
-then follow the instructions from neingeist
+then follow the instructions from neingeist (above)
+
+https://github.com/23b/soup-backup
