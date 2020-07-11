@@ -46,7 +46,7 @@ echo "$xsl" > "$xslfile"
 cd "$SAVEDIR"
 echo "Saving export RSS..."
 
-if ! wget -nv -O backup.rss -q "$EXPORTURL"; then
+if ! curl "$EXPORTURL" -nv -o backup.rss; then
   echo "oops. something wrong with wget:" >&2
   ls -l backup.rss >&2
   exit 1
@@ -76,7 +76,7 @@ xsltproc "$xslfile" ../backup.rss | while read url; do
     if ! test -f "$file"; then
       echo "Saving enclosure $url..."
       filetmp=`mktemp /tmp/soup-backup.XXXXXX`
-      if wget -O"$filetmp" -q "$url"; then
+      if curl "$url" -o "$filetmp" --create-dirs; then
         mv "$filetmp" "$file"
       else 
         rm -f "$filetmp"
